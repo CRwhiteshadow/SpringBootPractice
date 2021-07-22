@@ -13,9 +13,10 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "EMPLOYEE")
 public class Employee {
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "DEPTNO")
-	private Department department;
+//	@ManyToOne(fetch = FetchType.LAZY)
+//	@JoinColumn(name = "DEPTNO")
+//	private Department department;
+	
 	@Id @Column(name = "EMPNO")
 	private Integer empno;
 	@Column(name = "ENAME")
@@ -24,6 +25,8 @@ public class Employee {
 	private Date hireDate;
 	@Column(name = "SALARY")
 	private Integer salary;
+	
+	
 	@Column(name = "DEPTNO")
 	private Integer deptno;
 	@Column(name = "TITLE")
@@ -88,13 +91,13 @@ public class Employee {
 		this.title = title;
 	}
 
-	public Department getDepartment() {
-		return department;
-	}
-
-	public void setDepartment(Department department) {
-		this.department = department;
-	}
+//	public Department getDepartment() {
+//		return department;
+//	}
+//
+//	public void setDepartment(Department department) {
+//		this.department = department;
+//	}
 	
 	
 	

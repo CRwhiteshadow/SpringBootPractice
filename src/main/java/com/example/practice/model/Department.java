@@ -20,8 +20,8 @@ public class Department {
 	private Integer deptno;
 	@Column(name = "DNAME")
 	private String dname;
-	@OneToMany(fetch = FetchType.LAZY,mappedBy = "DEPARTMENT",cascade = CascadeType.ALL)
-	private Set<Employee> employee = new HashSet<Employee>();
+//	@OneToMany(fetch = FetchType.LAZY,mappedBy = "DEPARTMENT",cascade = CascadeType.ALL)
+//	private Set<Employee> employee = new HashSet<Employee>();
 	
 	public Department() {
 	}
@@ -48,13 +48,13 @@ public class Department {
 		this.dname = dname;
 	}
 
-	public Set<Employee> getEmployee() {
-		return employee;
-	}
-
-	public void setEmployee(Set<Employee> employee) {
-		this.employee = employee;
-	}
+//	public Set<Employee> getEmployee() {
+//		return employee;
+//	}
+//
+//	public void setEmployee(Set<Employee> employee) {
+//		this.employee = employee;
+//	}
 
 	
 }
